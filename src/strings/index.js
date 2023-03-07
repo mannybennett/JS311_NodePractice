@@ -3,7 +3,12 @@ const split = (str, delim) => {
 }
 
 const pairs = (str) => {
-  
+  let strArr = Array.from(str)
+  let arr = []
+  while (strArr.length > 0) {
+    arr.push(strArr.splice(0, 2).join(''))
+  }
+  return arr
 }
 
 const reverse = (str) => {
