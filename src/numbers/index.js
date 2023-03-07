@@ -1,16 +1,13 @@
 const isEven = (num) => {
-  // write code for numbers.isEven
-
+  return num % 2 === 0 ? true : false
 }
 
 const sum = (arr) => {
-  // write code for numbers.sum
-
+  return arr.reduce((x, y) => x + y)
 }
 
 const comboSum = (arr, sum) => {
-  // write code for numbers.comboSum
-
+  return arr.reduce((x, y) => x + y) === sum ? true : false
 }
 
 module.exports = {
